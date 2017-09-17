@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1505678555 source:c:\users\dell\documents\competitiveprogramming\damianexp\main.cpp
+	<iostream>
+	<cstdio>
+
+1505676100 source:c:\users\dell\documents\repositoriodamian\competitiveprogramming\binaryexponentiation.cpp
+	<cstdio>
+
