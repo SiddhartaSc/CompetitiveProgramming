@@ -1,1 +1,6 @@
 # depslib dependency file v1.0
+1507730245 source:c:\users\dell\documents\competitiveprogramming\ binaryexp\main.cpp
+	<cstdio>
+	<string>
+	<iostream>
+
