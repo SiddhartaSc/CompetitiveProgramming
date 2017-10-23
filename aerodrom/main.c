@@ -1,13 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-long long int search(long long int ti,long long int tf, long long int ndesks,long long tdesks[], long long int npersons){
+long long int search(long long int ti,long long int tf, long long int ndesks,long long int tdesks[], long long int npersons){
 
     long long int t = ((tf-ti)/2)+ti;
 
-    if(tf-ti==0)
-        return t;
-
+    if(tf-ti==0){
+    printf("%lld\n",t);
+    return 0;
+    }
     int i=0;
     long long int clients=0;
     while(i<ndesks && clients<npersons){
@@ -15,7 +16,7 @@ long long int search(long long int ti,long long int tf, long long int ndesks,lon
         i++;
     }
 
-    //printf("%d %d %d     %lld\n",ti,t,tf,clients);
+    //printf("%lld %lld %lld     %lld < %lld\n",ti,t,tf,clients,npersons);
 
     if(clients>=npersons)
         return search(ti,t,ndesks,tdesks,npersons);
@@ -33,7 +34,7 @@ int main() {
     freopen("output.txt", "wt", stdout);
     #endif
 
-    scanf("%lld%lld", &ndesks, &npersons);
+    scanf("%lld %lld", &ndesks, &npersons);
 
     //printf("%d\n", ndesks);
     //printf("%d\n", npersons);
@@ -47,6 +48,5 @@ int main() {
     }
 
     int t = search(1,100000000000000000,ndesks,tdesks,npersons);
-    printf("%lld",t);
-    return t;
+    return 0;
 }
