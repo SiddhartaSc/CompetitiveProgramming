@@ -37,6 +37,9 @@ int main() {
 	ExtendedEuclidAlgorithm(a, b, x, y, d);
 	//printf("(%lld)x(%lld) + (%lld)x(%lld) = %lld\n", a, x, b, y, d);
 
+	while(x<0)
+        x=x+b;
+
 	if(d==1)
         printf("%lld \n",x);
     else

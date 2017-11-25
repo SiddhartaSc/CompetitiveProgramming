@@ -34,3 +34,5 @@ int main() {
 	cout << binaryExp(a, sn, MOD) << endl;
 	return 0;
 }
+
+

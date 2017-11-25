@@ -1,5 +1,6 @@
 # depslib dependency file v1.0
-1508729189 source:c:\users\dell\documents\competitiveprogramming\rsa\main.cpp
+1509925994 source:c:\users\dell\documents\competitiveprogramming\rsa\main.cpp
 	<iostream>
 	<cstdio>
+	<math.h>
 

@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cstdio>
+#include <math.h>
 
 typedef long long ll;
 
@@ -52,12 +53,20 @@ long long binaryExp(long long a, long long n, long long MOD) {
 int main() {
 	ll n, e, c, x, y, d;
 	scanf("%lld %lld %lld", &n, &e, &c);
-	ExtendedEuclidAlgorithm(e, n, x, y, d);
+
+	long long sqr = (int)sqrt(n);
+    long long phi = n;
+		for (long long i = 3; i <= sqr; i++) {
+			if (n%i == 0)
+				phi = (i - 1) * (n/i - 1);
+		}
+
+	ExtendedEuclidAlgorithm(e, phi, x, y, d);
 	//printf("(%lld)x(%lld) + (%lld)x(%lld) = %lld\n", a, x, b, y, d);
 
-	printf("Entrada n:%lld e:%lld c:%lld de donde el inverso que existe porque d:%lld el inverso de e mod n salio x:%lld \n", n,e,c,d,x);
+	//printf("Entrada n:%lld e:%lld c:%lld de donde el inverso que existe porque d:%lld el inverso de e mod n salio x:%lld \n", n,e,c,d,x);
 	if(d==1){
-        printf("%lld\n", binaryExp(c, x, n)); // cout << binaryExp(a, n, MOD) << endl;
+            printf("%lld\n", binaryExp(c, x, n)); // cout << binaryExp(a, n, MOD) << endl;
     }
     else
         printf("-1\n");
