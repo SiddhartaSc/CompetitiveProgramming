@@ -6,8 +6,11 @@ using namespace std;
 int main()
 {
     cout << "Hello world!" << endl;
-    string sn;
-    cin >> sn;
-    cout << sn.size();
+    int n;
+    n=3;
+
+    while(n){
+        cout << "Hellou";
+    }
     return 0;
 }
