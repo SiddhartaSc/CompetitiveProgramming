@@ -25,6 +25,7 @@ long long int binaryExp(long long int a, string sn, long long int MOD) {
             a = modu((a * a),MOD);
         i--;
 	}
+
 	return res;
 }
 
