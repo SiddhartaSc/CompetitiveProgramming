@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1512627895 source:c:\users\dell\documents\programming\competitiveprogramming\horribleqry\main.cpp
+	<algorithm>
+	<functional>
+	<memory>
+	<vector>
+	<cstdio>
+
